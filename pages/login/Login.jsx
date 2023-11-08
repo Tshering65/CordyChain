@@ -171,7 +171,6 @@ export default function Login() {
                             placeholder="Email"
                             name="login"
                             required
-                            defaultValue
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                           />
@@ -183,7 +182,6 @@ export default function Login() {
                             className="form-control"
                             id="password"
                             placeholder="Password"
-                            defaultValue
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                           />

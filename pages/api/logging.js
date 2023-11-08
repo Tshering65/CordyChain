@@ -2,7 +2,7 @@
 import jwt from "jsonwebtoken";
 import connectMongoDB from "../../libs/mongodb";
 import registerInfo from "../../models/register";
-import bcrypt from "bcryptjs";
+// import bcrypt from "bcryptjs";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -23,8 +23,9 @@ export default async function handler(req, res) {
       if (userEmail !== storedEmail) {
         return res.status(401).json({ error: "Invalid credentials" });
       }
-      const passwordMatch = await bcrypt.compare(password, user.password);
-      if (passwordMatch) {
+      // const passwordMatch = await bcrypt.compare(password, user.password);
+      console.log(password, user.password);
+      if (password === user.password) {
         const token = jwt.sign(
           { userId: user._id, email: user.email },
           process.env.JWT_SECRET,
