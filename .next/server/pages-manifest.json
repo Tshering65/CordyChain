@@ -1,10 +1,20 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/login/Login": "pages/login/Login.js",
   "/api/logging": "pages/api/logging.js",
-  "/business-holiday/landing": "pages/business-holiday/landing.js",
-  "/": "pages/index.js",
-  "/business-holiday/info": "pages/business-holiday/info.js"
+  "/api/registering": "pages/api/registering.js",
+  "/business-holiday/WalletBalance": "pages/business-holiday/WalletBalance.html",
+  "/_document": "pages/_document.js",
+  "/business-holiday/SecretForm": "pages/business-holiday/SecretForm.html",
+  "/business-holiday/info": "pages/business-holiday/info.html",
+  "/api/users": "pages/api/users.js",
+  "/business-holiday/landing": "pages/business-holiday/landing.html",
+  "/login/Login": "pages/login/Login.html",
+  "/login/Otp": "pages/login/Otp.html",
+  "/": "pages/index.html",
+  "/login/Registration": "pages/login/Registration.html",
+  "/output": "pages/output.html",
+  "/oversease-mediclaim": "pages/oversease-mediclaim.html",
+  "/login/Profile": "pages/login/Profile.html",
+  "/404": "pages/404.html"
 }

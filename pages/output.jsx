@@ -1,8 +1,8 @@
 //this is the page where the crop details will be uploaded. although my web doesnt have purchase feature. it will be for customoers to view the crop details.
 
-'use client';
-import React, { useEffect, useState } from 'react';
-import Banner from '../components/banner/Banner';
+"use client";
+import React, { useEffect, useState } from "react";
+// import Banner from '../components/banner/Banner';
 
 export default function InfoList() {
   const [informations, setInformations] = useState([]); // Initialize as an empty array
@@ -10,16 +10,16 @@ export default function InfoList() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch('http://localhost:3000/api/users', {
-          cache: 'no-store',
+        const res = await fetch("http://localhost:3000/api/users", {
+          cache: "no-store",
         });
         if (!res.ok) {
-          throw new Error('Failed to fetch data');
+          throw new Error("Failed to fetch data");
         }
         const data = await res.json();
         setInformations(data.informations);
       } catch (error) {
-        console.error('Error loading data: ', error);
+        console.error("Error loading data: ", error);
       }
     }
 
@@ -27,24 +27,24 @@ export default function InfoList() {
   }, []); // The dependency array should be an empty array to run the effect only once.
 
   const listItemStyle = {
-    border: '1px solid #ddd',
-    margin: '10px',
-    padding: '10px',
-    display: 'flex !important',
-    flexDirection: 'column',
+    border: "1px solid #ddd",
+    margin: "10px",
+    padding: "10px",
+    display: "flex !important",
+    flexDirection: "column",
   };
 
   const headingStyle = {
-    fontSize: '18px',
+    fontSize: "18px",
   };
 
   const detailStyle = {
-    margin: '5px 0',
+    margin: "5px 0",
   };
 
   return (
     <>
-      <Banner
+      <div
         title="Crop Details"
         description="This is the page where crop details are being shown"
       />
