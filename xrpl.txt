@@ -1,0 +1,16 @@
+Sender(Charged fee will be send from this account)
+xrp wallet Address: rfVi1BsXCDhvJbVTvw2AF6LpMbRXXtLjoG
+xrp Secret key: sEdVeWhoL2qRuAcc3VvXJ5UBfYMipGZ
+
+
+
+
+DEPARTMENT ACCOUNT(Charged fee will be received into this account)
+Address
+rwD7VQG3qQVyQeiPcC1JHyu4wCPzB4oVev
+Secret
+sEdVooNZjGs7H8KrfmmmC7V999kBcny
+Balance
+10,000 XRP
+Sequence Number
+42718372
